@@ -15,9 +15,8 @@ const Navigation = (props, { authUser }) =>
   </div>
 
   Navigation.contextTypes = {
-  authUser: PropTypes.object,
-};
-
+    authUser: PropTypes.object,
+  };
 const NavigationAuth = () =>
   <ul>
     <li><Link to={routes.LANDING}>Landing</Link></li>
