@@ -1,10 +1,12 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
 
 import SignOutButton from './SignOut';
 import * as routes from '../constants/routes';
 
-const Navigation = ({ authUser }) =>
+const Navigation = (props, { authUser }) =>
+
   <div>
     { authUser
         ? <NavigationAuth />
@@ -12,6 +14,9 @@ const Navigation = ({ authUser }) =>
     }
   </div>
 
+  Navigation.contextTypes = {
+    authUser: PropTypes.object,
+  };
 const NavigationAuth = () =>
   <ul>
     <li><Link to={routes.LANDING}>Landing</Link></li>
