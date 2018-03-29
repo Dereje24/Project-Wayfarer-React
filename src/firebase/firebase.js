@@ -10,12 +10,12 @@ const prodConfig = {
  };
 
 const devConfig = {
- apiKey: “AIzaSyChJNUB-faFkWBIS_kfRNN8ECUIXNzflLw”,
- authDomain: “fire-auth-415e22.firebaseapp.com”,
+ apiKey: "AIzaSyChJNUB-faFkWBIS_kfRNN8ECUIXNzflLw",
+ authDomain: "fire-auth-415e22.firebaseapp.com",
  databaseURL: "https://fire-auth-415e22.firebaseio.com",
- projectID: “fire-auth-415e22”,
- storageBucket: “fire-auth-415e22.appspot.com”,
- messagingSenderId: “225683135643”
+ projectID: "fire-auth-415e22",
+ storageBucket: "fire-auth-415e22.appspot.com",
+ messagingSenderId: "225683135643"
 };
 
 const config = process.env.NODE_ENV === 'production'
