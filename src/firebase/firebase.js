@@ -1,6 +1,6 @@
 import * as firebase from 'firebase'
 
-const prodconfig = {
+const prodConfig = {
     apiKey: "AIzaSyCd7LfctVY3UuT1v_twdvvENhl0e0C4OxQ",
     authDomain: "martinapp-af485.firebaseapp.com",
     databaseURL: "https://martinapp-af485.firebaseio.com",
