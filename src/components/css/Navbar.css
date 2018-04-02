@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500');
 nav{
-  display: inline;
+  display: flex;
+  flex: auto;
 
 }
 nav h1{
@@ -11,4 +12,25 @@ nav ul{
 }
 nav ul li{
   background: red
+}
+
+
+.NavLogo{
+  background: blue;
+}
+
+.NavCities{
+  background: red;
+}
+
+.NavAddCity{
+  background: green;
+}
+
+.NavSearch{
+  background: purple;
+}
+
+.NavSignIn{
+  background: orange;
 }
