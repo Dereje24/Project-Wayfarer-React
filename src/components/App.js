@@ -3,12 +3,14 @@ import {
   BrowserRouter as Router,
   Route,
 } from 'react-router-dom';
+import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 import Carousel from './Carousel'
 import Navbar from './Navbar'
 import TopicContainer from './TopicContainer'
 class App extends Component{
   render() {
     return(
+    <MuiThemeProvider>
     <div>
     <Navbar />
     <hr/>
@@ -17,6 +19,7 @@ class App extends Component{
     <TopicContainer />
 
     </div>
+  </MuiThemeProvider>
     );
   }
 }
