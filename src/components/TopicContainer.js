@@ -5,20 +5,15 @@ import {
 } from 'react-router-dom';
 import Carousel from './Carousel'
 import Navbar from './Navbar'
-import TopicContainer from './TopicContainer'
-class App extends Component{
+class TopicContainer extends Component{
   render() {
     return(
     <div>
-    <Navbar />
-    <hr/>
-    <Carousel />
-    <h1> Watfarer is...</h1>
-    <TopicContainer />
+    <h1> Topic Container</h1>
 
     </div>
     );
   }
 }
 
-export default App;
+export default TopicContainer;
