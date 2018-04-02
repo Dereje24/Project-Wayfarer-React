@@ -3,7 +3,10 @@ import {
   BrowserRouter as Router,
   Route,
 } from 'react-router-dom';
+
+import RaisedButton from 'material-ui/RaisedButton';
 import './css/Navbar.css';
+
 
 class Navbar extends Component{
   render() {
@@ -22,6 +25,7 @@ class Navbar extends Component{
 
     <div className = "NavAddCity">
       <h1> Add a city Component</h1>
+
     </div>
 
     <div className = "NavSearch">
