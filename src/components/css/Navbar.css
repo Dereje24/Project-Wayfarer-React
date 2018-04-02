@@ -1,0 +1,32 @@
+nav{
+  display: flex;
+  flex: auto;
+
+}
+nav ul{
+  background: blue;
+}
+nav ul li{
+  background: red
+}
+
+
+.NavLogo{
+  background: blue;
+}
+
+.NavCities{
+  background: red;
+}
+
+.NavAddCity{
+  background: green;
+}
+
+.NavSearch{
+  background: purple;
+}
+
+.NavSignIn{
+  background: orange;
+}
