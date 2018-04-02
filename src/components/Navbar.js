@@ -1,11 +1,10 @@
 import React, {Component} from 'react';
-import {
-  BrowserRouter as Router,
-  Route,
-} from 'react-router-dom';
-
+import { Switch, Route, Link } from 'react-router-dom';
 import RaisedButton from 'material-ui/RaisedButton';
 import './css/Navbar.css';
+import SignIn from './SignIn';
+import MyRoutes from '../config/routes.js'
+
 
 
 class Navbar extends Component{
@@ -13,10 +12,11 @@ class Navbar extends Component{
     return(
     <nav>
       <div className = "NavLogo">
-        <a href="https://placeholder.com"><img src="http://via.placeholder.com/150x150"/></a>
+        <a><img src="http://via.placeholder.com/150x150"/></a>
       </div>
       <div>
-        <h1>Website Tittle</h1>
+        
+        <h1><Link to="/">Website Tittle</Link></h1>
     </div>
 
     <div className= "NavCities">
@@ -35,7 +35,8 @@ class Navbar extends Component{
 
       <div className = "NavSignIn">
         <ul>
-          <li> Sign In</li>
+          <li><Link to="/signin">Signin</Link></li>
+
           <li> Sign Out</li>
         </ul>
       </div>

@@ -1,24 +1,29 @@
 import React, {Component} from 'react';
-import {
-  BrowserRouter as Router,
-  Route,
-} from 'react-router-dom';
+import { Switch, Route } from 'react-router-dom';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 import Carousel from './Carousel'
 import Navbar from './Navbar'
-import TopicContainer from './TopicContainer'
+import TopicContainer from '../containers/TopicContainer.js';
+import MyRoutes from '../config/routes.js'
+
 class App extends Component{
   render() {
     return(
     <MuiThemeProvider>
-    <div>
-    <Navbar />
-    <hr/>
-    <Carousel />
-    <h1> Watfarer is...</h1>
-    <TopicContainer />
 
-    </div>
+      <Navbar />
+
+    <body>
+        <Carousel />
+        <h1> Watfarer is...</h1>
+        <TopicContainer />
+    </body>
+
+    <footer>
+
+    </footer>
+
+
   </MuiThemeProvider>
     );
   }
