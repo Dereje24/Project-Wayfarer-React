@@ -1,0 +1,10 @@
+nav{
+  display: inline;
+
+}
+nav ul{
+  background: blue;
+}
+nav ul li{
+  background: red
+}
