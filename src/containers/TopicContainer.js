@@ -5,6 +5,9 @@ import {
 } from 'react-router-dom';
 import Carousel from '../components/Carousel'
 import Navbar from '../components/Navbar'
+
+
+
 class TopicContainer extends Component{
   render() {
     return(

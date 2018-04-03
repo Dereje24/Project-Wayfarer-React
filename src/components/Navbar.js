@@ -3,7 +3,6 @@ import { Switch, Route, Link } from 'react-router-dom';
 import RaisedButton from 'material-ui/RaisedButton';
 import './css/Navbar.css';
 import SignIn from './SignIn';
-import MyRoutes from '../config/routes.js'
 
 
 
@@ -20,12 +19,12 @@ class Navbar extends Component{
       </div>
 
       <div>
-        <h1>Cities</h1>
+        <h1>Profile</h1>
       </div>
 
       <div className = "NavSignIn">
         <ul>
-          <li><Link to="/signin">Signin</Link></li>
+          <li><Link to="/signin">Sign In</Link></li>
 
           <li> Sign Out</li>
         </ul>
