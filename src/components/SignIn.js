@@ -23,7 +23,6 @@ class SignIn extends Component {
           <div className="">
               <h4>Sign in </h4>
             <div>
-                <h1>Login Form</h1>
                 <form onSubmit={ this.handleLogin }>
                     <input type="text" ref="username" placeholder="Username"/>
                     <input type="password" ref="password" placeholder="Password"/>

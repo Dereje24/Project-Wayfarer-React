@@ -27,22 +27,21 @@ class App extends Component{
     }
 
 
-  authenticate(user) {
+  authenticate(formData) {
         // SAMPLE ONLY -- You should insert the logic for your unique app here to request authentication!
         let url = 'http://localhost:3000/login';
+        console.log("User " + JSON.stringify(formData))
+        let user = JSON.stringify(formData)
         axios.post(url, user)
             .then((res) => {
                 console.log(res);
-                let authenticated = res.user ? true : false;
-                this.setState({ isAuthenticated: authenticated })
+                // let authenticated = res.user ? true : false;
+                // this.setState({ isAuthenticated: authenticated })
             })
             .catch((err) => { console.err(err); })
         // Testing only. In prod we would let the request above update the state
         // this.setState({ isAuthenticated: true, isAuthorized:true })
     }
-
-
-
 
   render() {
     return(
@@ -52,8 +51,6 @@ class App extends Component{
           <Carousel />
           <h1> Wayfarer is...</h1>
           <TopicContainer />
-
-
       <Switch>
         <Route path='/signin' render={ () => <SignIn authenticate={ this.authenticate } /> } />
       </Switch>
