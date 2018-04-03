@@ -8,15 +8,15 @@ nav h1{
   font-family: 'Roboto', sans-serif;
 }
 nav ul{
-  background: blue;
+  /* background: blue; */
 }
 nav ul li{
-  background: red
+  /* background: red */
 }
 
 
 .NavLogo{
-  background: blue;
+  /* background: blue; */
 }
 
 .NavCities{
