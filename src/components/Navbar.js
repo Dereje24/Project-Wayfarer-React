@@ -19,6 +19,10 @@ class Navbar extends Component{
         <h1><Link to="/">Website Tittle</Link></h1>
       </div>
 
+      <div>
+        <h1>Cities</h1>
+      </div>
+
       <div className = "NavSignIn">
         <ul>
           <li><Link to="/signin">Signin</Link></li>
@@ -26,7 +30,7 @@ class Navbar extends Component{
           <li> Sign Out</li>
         </ul>
       </div>
-      
+
   </nav>
     );
   }

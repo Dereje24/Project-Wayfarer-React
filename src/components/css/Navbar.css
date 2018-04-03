@@ -2,5 +2,7 @@
 nav{
   display: flex;
   flex: auto;
-
+  direction: row;
+  justify-content: space-between;
+  padding: 2em;
 }
