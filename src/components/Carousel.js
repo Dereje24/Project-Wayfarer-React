@@ -8,7 +8,7 @@ class Carousel extends Component{
   render() {
     return(
     <div>
-    <h1>Carousel</h1>
+      <a href="https://placeholder.com"><img src="http://via.placeholder.com/350x150"/></a>
     </div>
     );
   }
